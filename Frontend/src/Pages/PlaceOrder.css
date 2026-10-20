@@ -1,0 +1,133 @@
+
+.placeorder {
+  width: 90%;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  gap: 50px;
+}
+.order-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #e0f2fe;
+  color: #075985;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* LEFT SIDE */
+
+.address h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.input input {
+  width: 50%;
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  font-size: 15px;
+}
+
+.input input:focus {
+  outline: none;
+  border-color: #222;
+}
+
+
+/* RIGHT SIDE */
+
+.order-right {
+  width: 100%;
+}
+
+.order-right h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+
+/* PAYMENT */
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.payment label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.payment input {
+  cursor: pointer;
+}
+
+
+/* PLACE ORDER BUTTON */
+
+.place-btn {
+  width: 100%;
+  padding: 13px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: black;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.place-btn:hover {
+  background: #333;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .placeorder {
+    width: 95%;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+
+  .input input {
+    width: 100%;
+  }
+
+}

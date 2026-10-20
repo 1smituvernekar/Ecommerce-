@@ -1,0 +1,189 @@
+
+.form {
+  width: 100%;
+  max-width: 600px;
+
+  margin: 60px auto;
+  padding: 40px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* =========================
+   FORM TITLE
+========================= */
+
+.form h2 {
+  margin: 0 0 10px;
+
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  color: #222;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.form input,
+.form textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 15px 16px;
+
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #fafafa;
+
+  color: #222;
+
+  font-size: 15px;
+
+  font-family: inherit;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+
+/* PLACEHOLDER */
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #999;
+}
+
+
+/* INPUT FOCUS */
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #222;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.form textarea {
+  min-height: 140px;
+
+  resize: vertical;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.form button {
+  width: 100%;
+
+  padding: 15px 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #111111;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* BUTTON HOVER */
+
+.form button:hover {
+  background: #333333;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* BUTTON CLICK */
+
+.form button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+
+  .form {
+    width: 90%;
+
+    margin: 40px auto;
+
+    padding: 30px 22px;
+
+    border-radius: 14px;
+  }
+
+  .form h2 {
+    font-size: 25px;
+  }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+  .form {
+    width: 88%;
+
+    padding: 25px 18px;
+  }
+
+  .form input,
+  .form textarea,
+  .form button {
+    font-size: 14px;
+  }
+
+}

@@ -1,0 +1,127 @@
+
+.list-div {
+  width: 100%;
+  min-height: 100vh;
+  padding: 25px;
+  box-sizing: border-box;
+  background: #f8faf9;
+  color: #222;
+}
+
+.list-div h2 {
+  font-size: 27px;
+  margin-bottom: 22px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns:
+    90px
+    1.1fr
+    2fr
+    80px
+    100px
+    120px
+    130px
+    100px
+    70px;
+  gap: 12px;
+  align-items: center;
+  min-width: 1100px;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.list {
+  background: #e4f4e7;
+  border: 1px solid #cde5d1;
+  border-radius: 8px 8px 0 0;
+  font-weight: 700;
+  color: #216b37;
+}
+
+.list p,
+.items p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.items {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  transition: background 0.2s;
+}
+
+.items:hover {
+  background: #f0fdf4;
+}
+
+.image-cell {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.items .img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.items .name {
+  font-weight: 600;
+}
+
+.items .desc {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.items .prc {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+.empty-message {
+  padding: 30px;
+  background: white;
+  text-align: center;
+  min-width: 1100px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .list-div {
+    padding: 12px;
+  }
+
+  .list-div h2 {
+    font-size: 22px;
+  }
+}
