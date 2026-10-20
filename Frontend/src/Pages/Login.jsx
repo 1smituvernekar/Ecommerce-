@@ -11,8 +11,7 @@ const Login = () => {
   const [password, setPassword] = useState('')
   const [email, setEmail] = useState('')
   const [showPassword,setShowPassword] = useState(false)
-
-  const backendUrl = 'http://localhost:4000'
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const navigate = useNavigate()
 

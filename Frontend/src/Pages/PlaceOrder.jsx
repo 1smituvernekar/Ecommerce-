@@ -6,7 +6,7 @@ import './PlaceOrder.css'
 import CartTotals from '../Components/CartTotals'
 import { ShopContext } from '../Context/ShopContext'
 
-const backendUrl = 'http://localhost:4000'
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 const PlaceOrder = () => {
   const { cartItems, getCartAmount, clearCart } =

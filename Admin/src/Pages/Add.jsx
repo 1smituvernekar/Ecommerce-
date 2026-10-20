@@ -4,7 +4,7 @@ import "./Add.css";
 import axios from "axios";
 
 const Add = () => {
-  const backendUrl = "http://localhost:4000";
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   // 1. Store images
   const [image1, setImage1] = useState(null);

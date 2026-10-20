@@ -5,7 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const backendUrl = "http://localhost:4000";
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

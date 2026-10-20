@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Orders.css";
 
-const backendUrl = "http://localhost:4000";
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);

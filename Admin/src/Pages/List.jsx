@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import './List.css'
 
 const List = () => {
-  const backendUrl = 'http://localhost:4000'
+ const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const [products, setProducts] = useState([])
   const navigate = useNavigate()
