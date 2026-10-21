@@ -12,7 +12,7 @@ const razorpay = new Razorpay({
   key_secret: process.env.RAZORPAY_KEY_SECRET,
 });
 
-// 1. CASH ON DELIVERY
+// 1. CASH ON DELIVERY 
 const placeOrderCod = async (req, res) => {
   try {
     const { items, amount, address } = req.body;
