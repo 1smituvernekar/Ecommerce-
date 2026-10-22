@@ -7,7 +7,7 @@ import { ShopContext } from '../Context/ShopContext'
 const BestSeller = () => {
   const { products } = useContext(ShopContext)
 
-  const bestSeller = products.slice(0, 5) 
+  const bestSeller = products.slice(0, 6) 
 
   return (
     <section className="best-seller">
